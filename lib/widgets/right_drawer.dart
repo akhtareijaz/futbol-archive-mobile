@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:futbol_archive/screens/menu.dart';
 import 'package:futbol_archive/screens/productlist_form.dart';
-import 'package:futbol_archive/screens/product_entry_list.dart';
 
-class LeftDrawer extends StatelessWidget {
-  const LeftDrawer({super.key});
+class RightDrawer extends StatelessWidget {
+  const RightDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class LeftDrawer extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'Futbol Archive',
+                  'Futbol Archive Right Drawer',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
@@ -65,17 +64,6 @@ class LeftDrawer extends StatelessWidget {
                 )
               );
             },
-          ),
-          ListTile(
-              leading: const Icon(Icons.add_reaction_rounded),
-              title: const Text('Product List'),
-              onTap: () {
-                  // Route to news list page
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const ProductEntryListPage()),
-                  );
-              },
           ),          
         ],
       ),

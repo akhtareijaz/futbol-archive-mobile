@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:futbol_archive/widgets/left_drawer.dart';
 import 'package:futbol_archive/widgets/product_card.dart';
+import 'package:futbol_archive/widgets/right_drawer.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
@@ -92,6 +93,8 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       drawer: LeftDrawer(),
+
+      endDrawer: RightDrawer(),
     );
   }
 }
